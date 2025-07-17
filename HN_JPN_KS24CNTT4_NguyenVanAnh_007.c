@@ -113,16 +113,18 @@ DoubleNode* updateOrder(DoubleNode *head, int id) {
     printf("Don't found id!\n");
     return head;
 }
-DoubleNode* sort(DoubleNode *head) {
-    DoubleNode *current = head;
-    DoubleNode *prev = NULL;
-    while (current != NULL) {
-        if (current -> order.total > prev -> order.total) {
-            prev = current;
-            current = current -> next;
-        }
-    }
-}
+// DoubleNode* sort(DoubleNode *head) {
+//     DoubleNode *current = head;
+//     Order order;
+//     int swapped;
+//     Order *ptr1, *ptr2 = NULL;
+//    if (head == NULL) {
+//        return NULL;
+//    }
+//     do {
+//
+//     }
+// }
 // case 7
 DoubleNode *foundOderByCustomer(DoubleNode *head, char *key) {
     DoubleNode *current = head;
