@@ -10,15 +10,13 @@ typedef struct Operation {
     char time[100];
 }Operation;
 typedef struct StackBack {
-    Operation operation;
-    struct StackBack *top=-1;
-    struct StackBack *cap = 0;
+    Operation data[100];
+   int top;
+   int capacity;
+    int front;
 };
 int main() {
     int choice;
-    int choice;
-    int nextId = 1;
-    DoubleNode *doubleHead = NULL;
     do{
         printf("1. VISIT url\n");
         printf("2. BACKWARD\n");
